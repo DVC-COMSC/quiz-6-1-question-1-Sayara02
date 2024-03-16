@@ -3,11 +3,20 @@
 #define MAIN_HPP
 #include <iostream>
 #include <cmath>
-void getTwoValues(int &begin, int &end);
-int getNextPrime(int begin);
-int getPrevPrime(int end);
-#endif
-//********************
+bool isPrime(int num) {
+    if (num <=1)
+        return false;
+    if (num == 2)
+        return true;
+    if (num % 2 == 0)
+        return false;
+    for (imt i = 3; i <= sqrt(num); i += 2){
+        if (num % i == 0)
+            return false;
+    }
+    return true;
+
+}
 // Declare Function Prototypes
 //********************
 
