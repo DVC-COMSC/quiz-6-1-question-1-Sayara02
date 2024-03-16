@@ -25,6 +25,12 @@ int getPrevPrime(int end) {
 	}
 	return prev;
 }
+void getTwoValues(int &begin, int &end) {
+	do {
+	cout << "Enter two integer values (begin < end): ";
+	cin >> begin >> end:
+} while (begin >= end);
+}
 int main()
 {
 	int begin, end;
